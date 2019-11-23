@@ -2,11 +2,12 @@ package main
 
 import (
     "fmt"
+    "os"
 )
 
 func main() {
 
-    name := "Muzi"
+    name := os.Getenv("USERNAME")
     course := "Golang"
 
     fmt.Println("\nHi", name, "you're currently watching", course)
