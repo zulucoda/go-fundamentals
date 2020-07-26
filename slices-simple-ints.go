@@ -14,5 +14,9 @@ func main() {
 	myCourses[1] = 0
 	fmt.Println(myCourses)
 
-	fmt.Printf("Length is %d.\nCapacity is: %d", len(myCourses), cap(myCourses))
+	//	fmt.Printf("Length is %d.\nCapacity is: %d", len(myCourses), cap(myCourses))
+
+	// Slice of slice
+	sliceOfSlice := myCourses[2:5]
+	fmt.Println(sliceOfSlice)
 }
